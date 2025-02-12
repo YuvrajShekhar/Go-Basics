@@ -13,7 +13,7 @@ func getBalanceFromFile() (float64, error) {
 	balancebyte, err := os.ReadFile(accountFile)
 
 	if err != nil {
-		panic("Can't Continue sorry, failed to fetch balance file")
+		panic("Can't Continue sorry, failed to fetch balance")
 	}
 
 	balanceString := string(balancebyte)
@@ -32,6 +32,7 @@ func writeBalanceToFile(balance float64) {
 }
 
 func main() {
+	presentOptions()
 	var accountBalance, err = getBalanceFromFile()
 
 	if err != nil {
@@ -41,12 +42,6 @@ func main() {
 	}
 
 	for {
-		fmt.Println("Welcome to Go Bank!")
-		fmt.Println("What do you want to do?")
-		fmt.Println("1. Check balance")
-		fmt.Println("2. Deposit Money")
-		fmt.Println("3. Withdraw Money")
-		fmt.Println("4. Exit")
 
 		var choice int
 		fmt.Print("Your Choice : ")
