@@ -7,15 +7,20 @@ import (
 	"strings"
 
 	"example.com/note/note"
+	"example.com/note/todo"
 )
 
 func main() {
 	title, content := getNoteData()
+	todoText := getUserInput("Enter todo item : ")
 
 	userNote, _ := note.New(title, content)
+	userTodo, _ := todo.New(todoText)
 
 	userNote.DisplayNote()
 	userNote.SaveNote()
+	userTodo.DisplayTodo()
+	userTodo.SaveTodo()
 	fmt.Println("Note Saved succefully")
 }
 
