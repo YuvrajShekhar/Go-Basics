@@ -15,11 +15,11 @@ type Note struct {
 	CreatedAt time.Time
 }
 
-func (note Note) DisplayNote() {
+func (note Note) Display() {
 	fmt.Printf("The content of your note %v is as follows:\n%v", note.Title, note.Content)
 }
 
-func (note Note) SaveNote() error {
+func (note Note) Save() error {
 	filename := strings.ReplaceAll(note.Title, " ", "_")
 	filename = strings.ToLower(filename) + ".json"
 

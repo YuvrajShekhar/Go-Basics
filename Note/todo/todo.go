@@ -11,11 +11,11 @@ type Todo struct {
 	Content string
 }
 
-func (todo Todo) DisplayTodo() {
+func (todo Todo) Display() {
 	fmt.Printf("The content of your todo is as follows:\n%v", todo.Content)
 }
 
-func (todo Todo) SaveTodo() error {
+func (todo Todo) Save() error {
 	filename := "todo.json"
 
 	json, err := json.Marshal(todo)
