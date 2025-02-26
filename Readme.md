@@ -14,5 +14,6 @@ The folders in this repository cover the following concepts:
 | 4     | Pointers               | Pointers                  |
 | 5     | Note                   | Interfaces & generic code |
 | 6     | Array,Slices,Maps      | Array,Slices,Maps         |
+| 7     | Functions              | Functions                 |
 
 Happy coding! 🚀
