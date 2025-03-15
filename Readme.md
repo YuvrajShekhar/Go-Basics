@@ -15,5 +15,6 @@ The folders in this repository cover the following concepts:
 | 5     | Note                   | Interfaces & generic code |
 | 6     | Array,Slices,Maps      | Array,Slices,Maps         |
 | 7     | Functions              | Functions                 |
+| 8     | Concurrency            | Concurrency               |
 
 Happy coding! 🚀
